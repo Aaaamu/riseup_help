@@ -76,13 +76,13 @@ If the output of that command was 'x86_64' or 'amd64' then download the lastest 
 The following commands will download and verify the authenticity of the bundle.
 
 	gpg --keyserver pool.sks-keyservers.net --recv-key "1E45 3B2C E87B EE2F 7DFE 9966 1E34 A182 8E20 7901"
-	curl -O https://dl.bitmask.net/client/linux/Bitmask-linux64-latest.tar.bz2
-	curl -O https://dl.bitmask.net/client/linux/Bitmask-linux64-latest.tar.bz2.asc
-	gpg --verify Bitmask-linux64-latest.tar.bz2.asc Bitmask-linux64-latest.tar.bz2
+	curl -O https://dl.bitmask.net/client/linux/stable/Bitmask-linux64-latest.tar.gz
+	curl -O https://dl.bitmask.net/client/linux//stable/Bitmask-linux64-latest.tar.gz.asc
+	gpg --verify Bitmask-linux64-latest.tar.gz.asc Bitmask-linux64-latest.tar.gz
 
 If you get 'Correct signature' or 'Good signature' in the output, uncompress with the following command:
 
-	tar xfj https://dl.bitmask.net/client/GNU/Linux/Bitmask-GNU/Linux64-latest.tar.bz2
+	tar xfj https://dl.bitmask.net/client/GNU/Linux/Bitmask-GNU/Linux64-latest.tar.gz
 
 #### 32bits
 
@@ -91,13 +91,13 @@ If the output of that command was 'i686' or 'i386' then download the lastest ver
 The following commands will download and verify the authenticity of the bundle.
 
 	gpg --keyserver pool.sks-keyservers.net --recv-key "1E45 3B2C E87B EE2F 7DFE 9966 1E34 A182 8E20 7901"
-	curl -O https://dl.bitmask.net/client/linux/Bitmask-linux32-latest.tar.bz2
-	curl -O https://dl.bitmask.net/client/linux/Bitmask-linux32-latest.tar.bz2.asc
-	gpg --verify Bitmask-linux32-latest.tar.bz2.asc Bitmask-linux32-latest.tar.bz2
+	curl -O https://dl.bitmask.net/client/linux/stable/Bitmask-linux32-latest.tar.gz
+	curl -O https://dl.bitmask.net/client/linux/stable/Bitmask-linux32-latest.tar.gz.asc
+	gpg --verify Bitmask-linux32-latest.tar.bz2.asc Bitmask-linux32-latest.tar.gz
 
 If you get 'Correct signature' or 'Good signature' in the output, uncompress with the following command:
 
-	tar xfj Bitmask-GNU/Linux32-latest.tar.bz2
+	tar xfj Bitmask-GNU/Linux32-latest.tar.gz
 
 ## Using Bitmask for the first time
 
